@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+:root {
+	--blue: #329BC7;
+}
+body {
+	font-family: "Lato", sans-serif;
+	background: #fefef9;
+	columns: #252525;
+}
+.container {
+	margin: 0 3%;
+}
+button {
+	padding: 0.6em 1em;
+	font-family: "Lato", sans-serif;
+	cursor: pointer;
+	background: var(--blue);
+	color: #fefef9;
+	border: var(--blue) solid 2px;
+	transition: all ease-in-out 0.2s;
+}
+button:hover {
+	background: none;
+	color: var(--blue);
+}
+.white-text {
+	color: #fefef9;
+}
+/* ************************************************** */
+.section-wrapper {
+	padding: 2em 3%;
+}
+.section-header {
+	margin-bottom: 0.7em;
+}
+.Link {
+	color: gray;
+}
+.Link:hover {
+	text-decoration: underline;
+}
+.validation-msg {
+	display: inline-block;
+	color: rgb(0,0,0,.7);
+	padding: 0.4em;
+	margin-bottom: 0.7em;
+}
+input[type=text], input[type=password] , input[type=email] {
+	padding: 0.4em 0.7em;
+	font-size: 1em;
+	margin-bottom: 0.7em;
+	font-family: 'Lato', sans-serif;
+
+}
+.login-btn, .register-btn, .create-btn {
+	padding: 0.6em 1em;
+	margin-top: 1em;
+	font-family: "Lato", sans-serif;
+	cursor: pointer;
+	background: var(--blue);
+	color: #fefef9;
+	border: var(--blue) solid 2px;
+	transition: all ease-in-out 0.2s;
+}
+.login-btn:hover, .register-btn:hover, .create-btn:hover {
+	color: var(--blue);
+	background: none;
+}
+/* booksComp ********************************************/
+.booksComp .books-cont {
+	/*display: flex;
+	flex-wrap: wrap;*/
+}
+.booksComp-book {
+	margin-bottom: 1em;
+	background: #f4f4f4;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0.7em 1em;
+}
+.date-since {
+	color: gray;
+	font-size: 0.8em;
+	text-align: right;
+	margin-top: 0.2em;
+}
+
+/* NAVBAR ********************************************** */
+nav {
+	background: var(--blue);
+	color: #fefef9;
+	overflow: hidden;
+	transition: all ease-in-out 0.2s;
+}
+.logo-link {
+	text-decoration: none;
+	color: #fefef9
+}
+.burger-btn {
+	display: none;
+}
+/* in DT */
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 11vh;
+	padding: 0 2em;
+}
+.menu ul {
+	list-style-type: none;
+}
+.menu ul li {
+	display: inline;
+	margin: 0 1em;
+}
+.menu-link {
+	text-decoration: none;
+	color: #fefef9;
+}
+
+
+/* LOGIN SECTION */
+.logout-btn {
+	margin-top: 1.7em;
+}
+
+/* MY BOOKS SECTION */
+.myBook-item {
+	background: #eee;
+	margin-bottom: 1em;
+	padding: 0.4em;
+}
+.myBooks-link {
+	text-decoration: none;
+	color: #252525;
+}
+.myBooks-btns {
+	margin-top: 1em;
+}
+.myBooks-btns button {
+	margin-right: 0.7em;
+}
+
+/* BOOK COMP DETAILS SECTION */
+.bookComp-book {
+}
+.bookComp-book * {
+	margin-bottom: 1em;
+}
+.bookComp-description {
+	display: inline-block;
+}
+.bookComp-link {
+	text-decoration: none;
+	padding: 0.6em 1em;
+	display: inline-block;
+	margin-top: 0.7em;
+	background: var(--blue);
+	color: #fefef9;
+	border: var(--blue) solid 2px;
+	transition: all ease-in-out 0.2s;
+}
+.bookComp-link:hover {
+	color: var(--blue);
+	background: none;
+}
+
+/* IPAD MQ **********************************************************************************************************/ 
+@media screen and (max-width: 768px){
+	.burger-btn {
+		display: block;
+	}
+	.lb {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: 7vh;
+		padding: 0 1.5em;
+	}
+	.menu ul li {
+		display: block;
+	}
+	.menu {
+		background: #76BFE2;
+	}
+	.menu ul li {
+		text-align: center;
+		padding: 1em 0;
+		widows: 100%;
+	}
+	nav {
+		display: block;
+		height: 7vh;
+		padding: 0;
+	}
+}
+
+/* MOBILE MQ */
+@media screen and (max-width: 420px){
+	/* browse books section */
+	.booksComp-book {
+		display: block;
+	}
+	.viewDetailsBtn {
+		margin-top: 0.8em;
+	}
+	.booksComp-bookDetails {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
+	}
+}
