@@ -15,7 +15,7 @@ app.use('/api/books', require('./routes/booksRoute'))
 
 // connect to db
 mongoose.connect(
-	'mongodb+srv://anass:anass123456@test-t9rte.mongodb.net/test?retryWrites=true&w=majority',
+	'mongodb+srv://anass:userpass123@cluster0-u0ecs.mongodb.net/<dbname>?retryWrites=true&w=majority',
 	{ useNewUrlParser: true, useUnifiedTopology: true },
 	()=> console.log('connected to db!')
 )
