@@ -61,7 +61,7 @@ export default class loginComp extends React.Component {
 						<div>
 							<h2 className="section-header" >You are already logged in!</h2>
 							<h3><Link className="Link" to="/my-books" >click here to browse and add new books</Link></h3>
-							<button onClick={this.logout} className="logout-btn" >Log out</button>
+							<button onClick={this.logout} className="logout-btn" ><i className="fas fa-sign-out-alt"></i>&ensp;Log out</button>
 						</div>
 						:
 						<div>

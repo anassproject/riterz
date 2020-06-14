@@ -48,8 +48,8 @@ export default class myBooksComp extends React.Component {
 										<div key={index} className="myBook-item">
 											<Link className="myBooks-link" to={"/book/" + book._id} ><h2> {book.title} </h2></Link>
 											<div className="myBooks-btns">
-												<button className="myBooks-delete" onClick={this.handleDelete} id={book._id} >delete book</button>
-												<Link to={"/edit/" + book._id} ><button className="myBooks-edit">edit book</button></Link>
+												<button className="myBooks-delete" onClick={this.handleDelete} id={book._id} ><i className="far fa-trash-alt"></i>&ensp;delete book</button>
+												<Link to={"/edit/" + book._id} ><button className="myBooks-edit"><i className="far fa-edit"></i>&ensp;edit book</button></Link>
 											</div>
 										</div>
 									)

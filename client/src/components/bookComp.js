@@ -29,7 +29,7 @@ export default class bookComp extends React.Component {
 					<p>by {this.state.book.authorName}</p>
 					<p className="bookComp-description">Description: {this.state.book.description} </p>
 					<p className="bookComp-genre">Genre: {this.state.book.genre} </p>
-					<a className="bookComp-link" href={this.state.book.link} target="_blank" >Read/Download</a>
+					<a className="bookComp-link" href={this.state.book.link} target="_blank">Read/Download</a>
 				</div>
 
 			</div>

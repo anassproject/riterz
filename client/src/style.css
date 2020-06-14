@@ -101,7 +101,8 @@ nav {
 }
 .logo-link {
 	text-decoration: none;
-	color: #fefef9
+	color: #fefef9;
+	font-size: 1.5em;
 }
 .burger-btn {
 	display: none;
