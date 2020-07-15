@@ -16,4 +16,4 @@ includes only two post routes, a register and a login route.
 ### the frontend:
 the frontend is fairly simple, I used React router to manage the routing and axios to send requests to the backend API, in case there is a private action involved we get the user token from the local storage after it has been assigned when the user logged in, then we pass the token in the header of the axios request for a successful authentication.
 
-The project is hosted on Heroku: [here](https://riterz.herokuapp.com/).
+The project is deployed on Heroku: [here](https://riterz.herokuapp.com/).
