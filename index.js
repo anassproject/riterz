@@ -15,8 +15,7 @@ app.use('/api/books', require('./routes/booksRoute'))
 
 // connect to db
 mongoose.connect(
-	// DB URI HERE
-	,
+	/* DB URI HERE */,
 	{ useNewUrlParser: true, useUnifiedTopology: true },
 	()=> console.log('connected to db!')
 )
